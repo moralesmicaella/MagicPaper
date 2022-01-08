@@ -13,6 +13,7 @@
 		24D34A48278A0BA6009E3ACF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D34A46278A0BA6009E3ACF /* Main.storyboard */; };
 		24D34A4A278A0BA9009E3ACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D34A49278A0BA9009E3ACF /* Assets.xcassets */; };
 		24D34A4D278A0BA9009E3ACF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D34A4B278A0BA9009E3ACF /* LaunchScreen.storyboard */; };
+		24D34A54278A0E75009E3ACF /* harry_potter.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 24D34A53278A0E75009E3ACF /* harry_potter.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		24D34A47278A0BA6009E3ACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24D34A49278A0BA9009E3ACF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D34A4C278A0BA9009E3ACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24D34A53278A0E75009E3ACF /* harry_potter.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = harry_potter.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		24D34A3F278A0BA6009E3ACF /* MagicPaper */ = {
 			isa = PBXGroup;
 			children = (
+				24D34A53278A0E75009E3ACF /* harry_potter.mp4 */,
 				24D34A40278A0BA6009E3ACF /* AppDelegate.swift */,
 				24D34A42278A0BA6009E3ACF /* art.scnassets */,
 				24D34A44278A0BA6009E3ACF /* ViewController.swift */,
@@ -127,6 +130,7 @@
 				24D34A4D278A0BA9009E3ACF /* LaunchScreen.storyboard in Resources */,
 				24D34A4A278A0BA9009E3ACF /* Assets.xcassets in Resources */,
 				24D34A48278A0BA6009E3ACF /* Main.storyboard in Resources */,
+				24D34A54278A0E75009E3ACF /* harry_potter.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

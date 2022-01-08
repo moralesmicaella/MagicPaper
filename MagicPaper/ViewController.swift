@@ -28,7 +28,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
+        let configuration = ARImageTrackingConfiguration()
+        
+        if let imagesToTrack = ARReferenceImage.referenceImages(inGroupNamed: "NewspaperImages", bundle: .main) {
+            configuration.trackingImages = imagesToTrack
+            configuration.maximumNumberOfTrackedImages = 1
+        }
 
         // Run the view's session
         sceneView.session.run(configuration)
@@ -39,6 +44,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Pause the view's session
         sceneView.session.pause()
+    }
+    
+    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        let node = SCNNode()
+        
+        if let imageAnchor = anchor as? ARImageAnchor {
+            let plane = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width,
+                                 height: imageAnchor.referenceImage.physicalSize.height)
+            plane.firstMaterial?.diffuse.contents = UIColor(white: 1.0, alpha: 0.5)
+            
+            let planeNode = SCNNode(geometry: plane)
+            planeNode.eulerAngles.x = -.pi / 2
+            
+            node.addChildNode(planeNode)
+        }
+        
+        return node
     }
 
 }
